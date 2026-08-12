@@ -1035,7 +1035,7 @@ jobs:
           set_config "CONFIG_KSU=y"
 
           # KPM配置
-          if [ "${{ github.event.inputs.KPM }}" = "KPM" ] || [ "${{ github.event.inputs.KPM }}" = "N/A" ]; then
+          if [ "${{ github.event.inputs.KPM }}" = "KPM" ]; then
             set_config "CONFIG_KPM=y"
           fi
           if [ "${{ github.event.inputs.KPM }}" = "KPN" ]; then
